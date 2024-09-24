@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Money - Учет расходов и доходов</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #6b46c1, #9b59b6);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            color: #ffed4a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fbbf24;
+        }
+
+        /* Стили для хедера */
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        /* Секции главной страницы */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6b46c1, #1e3a8a);
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            background-color: #ffed4a;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            color: #1e3a8a;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #fbbf24;
+        }
+
+        /* Функции приложения */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .feature {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #ffed4a;
+        }
+
+        .feature p {
+            font-size: 1rem;
+        }
+
+        /* Стили для футера */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header>
+        <h1>My Money</h1>
+        <nav>
+            <a href="#about">О приложении</a>
+            <a href="#features">Функции</a>
+            <a href="#subscribe">Подписка</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <section class="hero">
+        <h2>Учет доходов и расходов в одном месте</h2>
+        <p>Эффективно управляйте своими финансами с помощью нашего мультиплатформенного сервиса. Все ваши расходы и доходы всегда под рукой!</p>
+        <button class="cta-button">Попробовать бесплатно</button>
+    </section>
+
+    <!-- О приложении -->
+    <section id="about">
+        <h2>О My Money</h2>
+        <p>My Money - это удобное решение для тех, кто хочет легко отслеживать свои финансы. Приложение помогает планировать бюджет, отслеживать расходы и управлять личными финансами в режиме реального времени.</p>
+    </section>
+
+    <!-- Функции приложения -->
+    <section id="features">
+        <h2>Функции My Money</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Автоматическая синхронизация</h3>
+                <p>Поддержка всех ваших устройств с мгновенной синхронизацией данных, чтобы вы всегда были в курсе своих финансов.</p>
+            </div>
+            <div class="feature">
+                <h3>Отчеты и аналитика</h3>
+                <p>Просматривайте детализированные отчеты и анализируйте свои финансовые привычки с помощью удобных графиков и диаграмм.</p>
+            </div>
+            <div class="feature">
+                <h3>Категоризация расходов</h3>
+                <p>Создавайте категории расходов для точного отслеживания бюджета и контроля за тратами.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section id="subscribe">
+        <h2>Подписка My Money</h2>
+        <p>Получите доступ к дополнительным функциям, таким как премиальные отчеты и интеграция с банками, с подпиской на My Money.</p>
+        <button class="cta-button">Оформить подписку</button>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contact">
+        <p>&copy; 2024 My Money. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
